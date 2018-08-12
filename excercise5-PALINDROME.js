@@ -2,24 +2,21 @@
 function palindrome(kata)
 {
 var status = true
-
 var tampung=''
 
-for(var i = kata.length -1; i>=0 ; i--)
-  {
-tampung= tampung + kata[i]
-  }
-if (tampung === kata)
+    for(var i = kata.length -1; i>=0 ; i--)
     {
-status = true
-console.log(status)
+      tampung= tampung + kata[i]
     }
-else
-    {
-  status = false
-  console.log(status)
-     }  
-
+        if (tampung === kata)
+        {
+          status = true
+        }
+        else
+        {
+          status = false  
+        }  
+ return (status)
 }
 
 // TEST CASES
