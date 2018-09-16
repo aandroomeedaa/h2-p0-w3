@@ -2,7 +2,8 @@ function groupAnimals(animals) {
   animals.sort()
   var aR = []
   var fA = animals[0][0]
-  var aT = []  
+  var aT = []
+  
   for (var i = 0; i < animals.length; i++) {
     if (animals[i][0] === fA) {
       aT.push(animals[i])
