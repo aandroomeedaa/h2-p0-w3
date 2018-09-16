@@ -1,22 +1,19 @@
 function datHAN(input){
-
-for (var i=0 ;i<input.length;i++){
-  console.log(' ')
-for (var j=0 ;j<input.length;j++){
-  if(j===0)
-console.log('Nomor ID = ' +input[i][j])
-else if(j===1)
-console.log('Nama = ' +input[i][j])
-else if(j===2)
-console.log('TTL = '+input[i][j] +', '+input[i][j+1])
-else if(j===3)
-console.log('Hobby = ' +input[i][j+1])
-
+  for (var i=0 ;i<input.length;i++){
+    console.log(' ')
+    for (var j=0 ;j<input.length;j++){
+      if(j===0){
+        console.log('Nomor ID = ' +input[i][j])
+      }else if(j===1){
+        console.log('Nama = ' +input[i][j])
+      }else if(j===2){
+        console.log('TTL = '+input[i][j] +', '+input[i][j+1])
+      }else if(j===3){
+        console.log('Hobby = ' +input[i][j+1])
+      }
+    }
+  }
 }
-}
-
-}
-
 console.log(datHAN( [
                 ["0001", "Roman Alamsyah", "Bandar Lampung", "21/05/1989", "Membaca"],
                 ["0002", "Dika Sembiring", "Medan", "10/10/1992", "Bermain Gitar"],
